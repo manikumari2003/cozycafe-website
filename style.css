@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #fdf6f0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3e2723;
+    padding: 20px 60px;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffccbc;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    background: #d84315;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #bf360c;
+}
+
+/* Menu */
+.menu {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+}
+
+.item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item h3 {
+    margin: 15px 0 5px;
+}
+
+.item p {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.item span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #3e2723;
+}
+
+/* About */
+.about {
+    padding: 80px 60px;
+    background: #efebe9;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+/* Contact */
+.contact {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
